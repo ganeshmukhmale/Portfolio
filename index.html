@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganesh Mukhmale | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Header Section -->
+    <header id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo">GM</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()" aria-label="Close menu"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()" aria-label="Open menu"></i>
+            </nav>
+            <div class="header-text">
+                <p class="profession">Full-Stack Developer</p>
+                <h1>Hello, I'm<br><span>Ganesh</span> Mukhmale<br><i>Pune, Maharashtra</i></h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Ganesh-img.jpg" alt="Ganesh Mukhmale">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span><h2>Full-Stack Developer</h2></span>
+                                <ul>
+                                    <li>Java, HTML, CSS, JavaScript</li>
+                                    <li>Data Structures & Algorithms</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><h2>2024 - Present</h2> Practicing independently and building projects to improve skills.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><h3>2020-2024</h3> Bachelor of Information Technology, Prof. Ram Meghe College, Amravati</li>
+                            <li><h3>2018-2020</h3> HSC, Laxmichand Junior College, Shelu Bazar, Maharashtra</li>
+                            <li><h3>2017-2018</h3> SSC, Laxmichand High School, Shelu Bazar, Maharashtra</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Building responsive and dynamic websites.</p>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Creating user-friendly interfaces for web and apps.</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>Developing interactive and feature-rich mobile apps.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/Sales.jpg" alt="Sales Project">
+                    <div class="layer">
+                        <h3>Increase Product Sale</h3>
+                        <p>A project to enhance sales through strategic tools.</p>
+                        <a href="https://khakare-project.onrender.com/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/New-Project.jpeg" alt="Media App">
+                    <div class="layer">
+                        <h3>Media App</h3>
+                        <p>A media sharing platform project.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/New-Project.jpeg" alt="Online Shopping App">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>An e-commerce application design.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i> ganeshmukhamale2001@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 7219792131</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/ganesh-mukhmale-86476a264" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/ganeshmukhmale" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/ganeshmukhamale2001/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="images/Ganesh.Mukhmale_Resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Thank You <i class="fa-solid fa-heart"></i> Visit Again!</p>
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
