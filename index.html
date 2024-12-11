@@ -161,6 +161,25 @@
         </div>
     </section>
 
-    <script src="scripts.js"></script>
+    <script>
+        function opentab(tabName) {
+    // Hide all tab contents
+    const tabContents = document.getElementsByClassName("tab-contents");
+    for (let i = 0; i < tabContents.length; i++) {
+        tabContents[i].classList.remove("active-tab");
+    }
+
+    // Remove active-link class from all tab links
+    const tabLinks = document.getElementsByClassName("tab-links");
+    for (let i = 0; i < tabLinks.length; i++) {
+        tabLinks[i].classList.remove("active-link");
+    }
+
+    // Show the selected tab content and add active-link class to the corresponding link
+    document.getElementById(tabName).classList.add("active-tab");
+    event.currentTarget.classList.add("active-link");
+}
+
+    </script>
 </body>
 </html>
