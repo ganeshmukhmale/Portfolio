@@ -89,6 +89,9 @@ nav ul li a:hover::after{
 
 
 /*-----------about-----------*/
+.info{
+    background-image: url(images/back2.avif);
+}
 
 #about{
     padding: 80px 0;
