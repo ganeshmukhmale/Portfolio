@@ -180,6 +180,16 @@
     event.currentTarget.classList.add("active-link");
 }
 
+document.addEventListener('DOMContentLoaded', function () {
+        const skillFills = document.querySelectorAll('.skill-fill');
+        skillFills.forEach(skillFill => {
+            const width = skillFill.style.width;
+            skillFill.style.width = '0';
+            setTimeout(() => {
+                skillFill.style.width = width;
+            }, 100); // Adjust the delay as needed
+        });
+    });
     </script>
 </body>
 </html>
