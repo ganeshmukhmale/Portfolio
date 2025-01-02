@@ -528,7 +528,7 @@ nav .fas{
         font-size: 30px;
     }
     nav ul{
-        background: #3178da;
+        background: #d75df0;
         position: fixed;
         top: 0;
         right: -200px;
@@ -537,6 +537,8 @@ nav .fas{
         padding-top: 50px;
         z-index: 1;
         transition: right 0.4s;
+        border-radius: 0px 0px 0px 20px;
+        opacity: 0.8;
     }
     nav ul li{
         display: block;
